@@ -12,7 +12,7 @@ RUN apt-get update -y \
         python3 python3-pip python3-venv \
         python3-all-dev python3-setuptools build-essential python3-wheel \
         openjdk-8-jdk \
-        pip3 install pyspark kafka-python virtualenv \
+    &&  pip3 install pyspark kafka-python virtualenv \
     && apt-get autoremove -y \
     && apt-get clean -y
 
